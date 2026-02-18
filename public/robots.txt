@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://togthr-template-ahbaic-gilads-projects-6e9fe709.vercel.app/sitemap.xml
