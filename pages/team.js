@@ -88,7 +88,7 @@ const Team = (props) => {
             <div className="team-member">
               <div className="team-member-photo-wrap">
                 <img
-                  src="/yael.jpeg"
+                  src="/yael.png"
                   alt="Yael Magen"
                   className="team-member-photo"
                 />
