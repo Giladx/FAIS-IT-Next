@@ -3,17 +3,14 @@ import Link from 'next/link'
 
 const PageLinks = () => {
   const links = [
-    { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
-    { label: 'F.A.I.S Method', href: '/fais-method' },
+    { label: 'F.A.I.S', href: '/fais-method' },
     { label: 'Team', href: '/team' },
     { label: 'Media', href: '/media' },
     { label: 'Resources', href: '/resources' },
-    { label: 'News', href: '/news' },
+    { label: 'Get Involved', href: '/contact' },
     { label: 'Donate', href: '/donate' },
-    { label: 'Need Help', href: '/need-help' },
     { label: 'Contact', href: '/contact' },
-    { label: 'Parents', href: '/parents' },
   ]
 
   return (
