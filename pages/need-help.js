@@ -19,6 +19,7 @@ const NeedHelp = (props) => {
             content="Our mission is to educate and empower teenagers, by teenagers, to recognize, speak up and change anti-Semitic curriculum in their schools, community and online.  \n"
           />
           <meta property="og:title" content="Need-Help - FAIS IT" />
+          <meta name="robots" content="noindex, nofollow" />
           <meta
             property="og:description"
             content="Our mission is to educate and empower teenagers, by teenagers, to recognize, speak up and change anti-Semitic curriculum in their schools, community and online.  \n"
@@ -107,13 +108,7 @@ const NeedHelp = (props) => {
                   <span>Need Help</span>
                   <br></br>
                 </h1>
-              </div>
-              <p className="need-help-thq-caption-elm">
-                Our mission is to educate and empower teenagers, by teenagers,
-                to recognize, speak up and change anti-Semitic curriculum in
-                their schools, community and online.  
-              </p>
-            </div>
+              </div>            </div>
             <Link href="/contact">
               <a className="need-help-link button">
                 <span>
@@ -334,13 +329,6 @@ const NeedHelp = (props) => {
           }
           rootClassName="footerroot-class-name6"
         ></Footer>
-        <div className="need-help-container4">
-          <div className="need-help-container5">
-            <Script
-              html={`<script type="text/javascript" src="https://form.jotform.com/jsform/250776130124045"></script>`}
-            ></Script>
-          </div>
-        </div>
       </div>
       <style jsx>
         {`
@@ -429,14 +417,14 @@ const NeedHelp = (props) => {
           }
           .need-help-thq-heading-elm {
             color: rgb(255, 255, 255);
-            font-size: 100px;
+            font-size: var(--fais-font-display);
             max-width: 790px;
             font-style: normal;
             font-weight: 500;
           }
           .need-help-thq-caption-elm {
             color: rgb(255, 255, 255);
-            font-size: 24px;
+            font-size: var(--fais-font-body-lg);
             max-width: 600px;
             line-height: 36px;
           }
@@ -462,7 +450,7 @@ const NeedHelp = (props) => {
             color: rgb(255, 255, 255);
             width: 100%;
             display: none;
-            font-size: 50px;
+            font-size: var(--fais-font-h2);
             max-width: var(--dl-layout-size-maxwidth);
           }
           .need-help-text27 {
@@ -597,16 +585,10 @@ const NeedHelp = (props) => {
               padding-right: var(--dl-layout-space-fiveunits);
               padding-bottom: var(--dl-layout-space-fiveunits);
             }
-            .need-help-text26 {
-              font-size: 50px;
-            }
           }
           @media (max-width: 1200px) {
             .need-help-thq-body-elm {
               padding: var(--dl-layout-space-fourunits);
-            }
-            .need-help-text26 {
-              font-size: 40px;
             }
           }
           @media (max-width: 991px) {
@@ -621,9 +603,6 @@ const NeedHelp = (props) => {
             }
           }
           @media (max-width: 767px) {
-            .need-help-thq-heading-elm {
-              font-size: 60px;
-            }
             .need-help-thq-body-elm {
               width: 100%;
               padding: var(--dl-layout-space-threeunits);
@@ -632,9 +611,6 @@ const NeedHelp = (props) => {
           @media (max-width: 479px) {
             .need-help-thq-hero-content-elm {
               gap: var(--dl-layout-space-threeunits);
-            }
-            .need-help-thq-heading-elm {
-              font-size: 36px;
             }
             .need-help-thq-caption-elm {
               font-size: 16px;

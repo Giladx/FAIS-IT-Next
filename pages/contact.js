@@ -108,13 +108,7 @@ const Contact = (props) => {
                     <span>Contact</span>
                     <br></br>
                   </h1>
-                </div>
-                <p className="contact-thq-caption-elm">
-                  Our mission is to educate and empower teenagers, by teenagers,
-                  to recognize, speak up and change anti-Semitic curriculum in
-                  their schools, community and online.  
-                </p>
-              </div>
+                </div>              </div>
               <Link href="/contact">
                 <a className="contact-link button">
                   <span>Get Involved</span>
@@ -345,14 +339,14 @@ const Contact = (props) => {
           }
           .contact-thq-heading-elm {
             color: rgb(255, 255, 255);
-            font-size: 100px;
+            font-size: var(--fais-font-display);
             max-width: 790px;
             font-style: normal;
             font-weight: 500;
           }
           .contact-thq-caption-elm {
             color: rgb(255, 255, 255);
-            font-size: 24px;
+            font-size: var(--fais-font-body-lg);
             max-width: 600px;
             line-height: 36px;
             margin-bottom: var(--dl-layout-space-twounits);
@@ -450,17 +444,11 @@ const Contact = (props) => {
             }
           }
           @media (max-width: 767px) {
-            .contact-thq-heading-elm {
-              font-size: 60px;
-            }
           }
           @media (max-width: 479px) {
             .contact-thq-hero-content-elm {
               gap: var(--dl-layout-space-threeunits);
               flex-direction: column;
-            }
-            .contact-thq-heading-elm {
-              font-size: 36px;
             }
             .contact-thq-caption-elm {
               font-size: 16px;

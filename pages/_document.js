@@ -30,7 +30,7 @@ class CustomDocument extends Document {
           ></link>
           <link
             rel="shortcut icon"
-            href="/star_of_david.svg.png"
+            href="/newlogo.png"
             type="icon/png"
             sizes="32x32"
           ></link>

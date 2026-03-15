@@ -106,13 +106,7 @@ const Events = (props) => {
                   <span>Events</span>
                   <br></br>
                 </h1>
-              </div>
-              <p className="events-thq-caption-elm">
-                Our mission is to educate and empower teenagers, by teenagers,
-                to recognize, speak up and change anti-Semitic curriculum in
-                their schools, community and online.  
-              </p>
-            </div>
+              </div>            </div>
             <Link href="/contact">
               <a className="events-link button">
                 <span>
@@ -414,14 +408,14 @@ const Events = (props) => {
           }
           .events-thq-heading-elm {
             color: rgb(255, 255, 255);
-            font-size: 100px;
+            font-size: var(--fais-font-display);
             max-width: 790px;
             font-style: normal;
             font-weight: 500;
           }
           .events-thq-caption-elm {
             color: rgb(255, 255, 255);
-            font-size: 24px;
+            font-size: var(--fais-font-body-lg);
             max-width: 600px;
             line-height: 36px;
           }
@@ -439,7 +433,7 @@ const Events = (props) => {
           .events-text26 {
             color: rgb(255, 255, 255);
             width: 100%;
-            font-size: 50px;
+            font-size: var(--fais-font-h2);
             max-width: var(--dl-layout-size-maxwidth);
           }
           .events-text27 {
@@ -568,16 +562,10 @@ const Events = (props) => {
               padding-right: var(--dl-layout-space-fiveunits);
               padding-bottom: var(--dl-layout-space-fiveunits);
             }
-            .events-text26 {
-              font-size: 50px;
-            }
           }
           @media (max-width: 1200px) {
             .events-thq-body-elm {
               padding: var(--dl-layout-space-fourunits);
-            }
-            .events-text26 {
-              font-size: 40px;
             }
           }
           @media (max-width: 991px) {
@@ -592,22 +580,13 @@ const Events = (props) => {
             }
           }
           @media (max-width: 767px) {
-            .events-thq-heading-elm {
-              font-size: 60px;
-            }
             .events-thq-body-elm {
               padding: var(--dl-layout-space-threeunits);
-            }
-            .events-text26 {
-              font-size: 25px;
             }
           }
           @media (max-width: 479px) {
             .events-thq-hero-content-elm {
               gap: var(--dl-layout-space-threeunits);
-            }
-            .events-thq-heading-elm {
-              font-size: 36px;
             }
             .events-thq-caption-elm {
               font-size: 16px;

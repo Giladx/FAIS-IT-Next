@@ -93,51 +93,63 @@ const Home = (props) => {
               </Fragment>
             }
           ></Header>
-          <video
-            src="https://videos.pexels.com/video-files/4841989/4841989-hd_1366_720_25fps.mp4"
-            loop
-            muted
-            poster="https://images.pexels.com/videos/4841989/pictures/preview-0.jpg"
-            preload="auto"
-            autoPlay
-            playsInline
-            className="home-video"
-          ></video>
-          <div className="home-thq-hero-content-elm">
-            <div className="home-thq-header-container-elm1">
-              <div className="home-thq-header-elm10"></div>
-              <h1 className="home-thq-heading-elm10">
-                Empowering Teens to Combat Antisemitism
-              </h1>
-              <p className="home-thq-caption-elm10">
-                Our mission is to educate and empower teenagers, by teenagers,
-                to recognize, speak up and change anti-Semitic curriculum in
-                their schools, community and online.  
+          <img
+            src="/PrintedBuisnesscardsplus.png"
+            alt="FAIS hero"
+            className="home-video home-video-desktop"
+          />
+          <img
+            src="/Backshot.png"
+            alt="FAIS hero"
+            className="home-video home-video-mobile"
+          />
+        </section>
+        <section className="home-hero-text-elm">
+          <Link href="/contact">
+            <a className="home-link1 button">
+              <span>
+                <span>Get Involved</span>
+                <br></br>
+              </span>
+            </a>
+          </Link>
+        </section>
+        <section className="home-about-info-elm">
+          <div className="home-about-info-inner">
+            <div className="home-about-info-block">
+              <p className="home-about-info-text">
+                Our mission is to educate and empower teenagers—by teenagers—to recognize, speak up against, and help change antisemitic and anti-Israel curriculum in their schools, communities, and online.
               </p>
             </div>
-            <Link href="/contact">
-              <a className="home-link1 button">
-                <span>
-                  <span>Get Involved</span>
-                  <br></br>
-                </span>
-              </a>
-            </Link>
+            <div className="home-about-info-block">
+              <p className="home-about-info-text">
+                Students are often the first line of defense against antisemitic or anti-Israel content in education. Parents frequently do not see the materials their children are taught, while students encounter them directly in classrooms and assignments. Yet many students lack the tools to recognize bias, understand why it is harmful, and take effective action.
+              </p>
+            </div>
+            <div className="home-about-info-block">
+              <p className="home-about-info-text">
+                FAIS exists to give students the knowledge, confidence, and strategy they need to stand up for historical truth and ensure that antisemitism has no place in education.
+              </p>
+            </div>
           </div>
         </section>
         <section className="home-thq-note-elm">
-          <h2 className="home-thq-caption-elm11">
-            <span>
-              The FAIS Method to combat Antisemitism/Anti-Israel in the
-              curricula
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: ' ',
-                }}
-              />
-            </span>
-            <br></br>
-          </h2>
+          <Link href="/fais-method">
+            <a className="home-fais-method-link">
+              <h2 className="home-thq-caption-elm11">
+                <span>
+                  The FAIS Method to combat Antisemitism/Anti-Israel in the
+                  curricula
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+                <br></br>
+              </h2>
+            </a>
+          </Link>
         </section>
         <section className="home-thq-statistics-elm">
           <div className="home-thq-content-elm10">
@@ -1379,10 +1391,23 @@ const Home = (props) => {
             top: 0px;
             left: 0px;
             width: 100%;
-            filter: opacity(0.6);
             height: 100%;
             position: absolute;
             object-fit: cover;
+          }
+          .home-video-mobile {
+            display: none;
+          }
+          @media (max-width: 767px) {
+            .home-video-desktop {
+              display: none;
+            }
+            .home-video-mobile {
+              display: block;
+            }
+            .home-video {
+              object-fit: contain;
+            }
           }
           .home-thq-hero-content-elm {
             gap: var(--dl-layout-space-fiveunits);
@@ -1410,26 +1435,73 @@ const Home = (props) => {
           }
           .home-thq-heading-elm10 {
             color: rgb(255, 255, 255);
-            font-size: 80px;
+            font-size: var(--fais-font-display);
             max-width: 790px;
             font-style: normal;
             font-weight: 500;
           }
           .home-thq-caption-elm10 {
             color: rgb(255, 255, 255);
-            font-size: 24px;
-            max-width: 600px;
-            line-height: 36px;
+            font-size: 45px;
+            max-width: 1280px;
+            line-height: 55px;
+          }
+          .home-caption-dark {
+            color: rgb(255, 255, 255);
           }
           .home-link1 {
             text-decoration: none;
+          }
+          .home-hero-text-elm {
+            gap: var(--dl-layout-space-threeunits);
+            width: 100%;
+            display: flex;
+            padding: var(--dl-layout-space-fiveunits);
+            padding-top: 0px;
+            max-width: var(--dl-layout-size-maxwidth);
+            align-self: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+          }
+          .home-heading-dark {
+            color: rgb(255, 255, 255);
+          }
+          .home-about-info-elm {
+            width: 100%;
+            display: flex;
+            padding: var(--dl-layout-space-fiveunits);
+            background: #1a1a1a;
+            justify-content: center;
+          }
+          .home-about-info-inner {
+            gap: var(--dl-layout-space-fourunits);
+            width: 100%;
+            display: flex;
+            max-width: var(--dl-layout-size-maxwidth);
+            flex-direction: column;
+          }
+          .home-about-info-block {
+            border-left: 4px solid #ffffff;
+            padding-left: var(--dl-layout-space-twounits);
+          }
+          .home-about-info-text {
+            color: rgb(255, 255, 255);
+            font-size: var(--fais-font-body-lg);
+            line-height: 1em;
+            margin: 0;
+          }
+          .home-fais-method-link {
+            text-decoration: none;
+            color: inherit;
           }
           .home-thq-note-elm {
             width: 100%;
             display: flex;
             max-width: var(--dl-layout-size-maxwidth);
             align-self: center;
-            align-items: flex-end;
+            align-items: center;
+            text-align: center;
             padding-top: 120px;
             padding-left: var(--dl-layout-space-fiveunits);
             padding-right: var(--dl-layout-space-fiveunits);
@@ -1581,7 +1653,7 @@ const Home = (props) => {
           }
           .home-thq-heading-elm11 {
             color: rgb(255, 255, 255);
-            font-size: 60px;
+            font-size: var(--fais-font-h1);
             max-width: 900px;
             font-style: normal;
             font-weight: 400;
@@ -1631,7 +1703,7 @@ const Home = (props) => {
           }
           .home-thq-heading-elm12 {
             color: rgb(255, 255, 255);
-            font-size: 60px;
+            font-size: var(--fais-font-h1);
             font-style: normal;
             font-weight: 400;
           }
@@ -2042,7 +2114,7 @@ const Home = (props) => {
           }
           .home-thq-heading-elm17 {
             color: rgb(255, 255, 255);
-            font-size: 60px;
+            font-size: var(--fais-font-h1);
             font-style: normal;
             font-weight: 400;
           }
@@ -2232,7 +2304,7 @@ const Home = (props) => {
           }
           .home-thq-heading-elm18 {
             color: rgb(255, 255, 255);
-            font-size: 60px;
+            font-size: var(--fais-font-h1);
             font-style: normal;
             font-weight: 400;
           }
@@ -2446,7 +2518,7 @@ const Home = (props) => {
           }
           .home-thq-heading-elm19 {
             color: rgb(255, 255, 255);
-            font-size: 100px;
+            font-size: var(--fais-font-display);
             font-style: normal;
             text-align: center;
             font-weight: 500;
@@ -2486,7 +2558,7 @@ const Home = (props) => {
           }
           .home-thq-heading-elm20 {
             color: rgb(255, 255, 255);
-            font-size: 60px;
+            font-size: var(--fais-font-h1);
             font-style: normal;
             font-weight: 400;
           }
@@ -2913,7 +2985,7 @@ const Home = (props) => {
           }
           .home-thq-heading-elm21 {
             color: rgb(255, 255, 255);
-            font-size: 60px;
+            font-size: var(--fais-font-h1);
             font-style: normal;
             font-weight: 400;
           }
@@ -2992,7 +3064,7 @@ const Home = (props) => {
           }
           .home-thq-heading-elm22 {
             color: rgb(255, 255, 255);
-            font-size: 60px;
+            font-size: var(--fais-font-h1);
             max-width: 900px;
             font-style: normal;
             font-weight: 400;
@@ -3229,7 +3301,7 @@ const Home = (props) => {
           }
           .home-thq-heading-elm23 {
             color: rgb(255, 255, 255);
-            font-size: 60px;
+            font-size: var(--fais-font-h1);
             font-style: normal;
             font-weight: 400;
           }
@@ -3692,9 +3764,6 @@ const Home = (props) => {
               padding-top: var(--dl-layout-space-fourunits);
               padding-bottom: var(--dl-layout-space-fourunits);
             }
-            .home-thq-heading-elm19 {
-              font-size: 50px;
-            }
             .home-thq-headers-elm1 {
               flex: 0;
             }
@@ -4002,21 +4071,12 @@ const Home = (props) => {
             }
           }
           @media (max-width: 767px) {
-            .home-thq-heading-elm10 {
-              font-size: 60px;
-            }
             .home-thq-note-elm {
               align-items: flex-start;
               padding-top: var(--dl-layout-space-threeunits);
               padding-left: var(--dl-layout-space-oneandhalfunits);
               padding-right: var(--dl-layout-space-oneandhalfunits);
               padding-bottom: var(--dl-layout-space-fourunits);
-            }
-            .home-thq-caption-elm11 {
-              font-size: 18px;
-              max-width: 90%;
-              line-height: 23px;
-              margin-right: 0px;
             }
             .home-thq-statistics-elm {
               padding-left: var(--dl-layout-space-oneandhalfunits);
@@ -4292,9 +4352,6 @@ const Home = (props) => {
             .home-thq-content-elm20 {
               padding-left: var(--dl-layout-space-oneandhalfunits);
               padding-right: var(--dl-layout-space-oneandhalfunits);
-            }
-            .home-thq-heading-elm19 {
-              font-size: 36px;
             }
             .home-thq-comparision-elm {
               gap: var(--dl-layout-space-threeunits);
@@ -4604,9 +4661,6 @@ const Home = (props) => {
           @media (max-width: 479px) {
             .home-thq-hero-content-elm {
               gap: var(--dl-layout-space-threeunits);
-            }
-            .home-thq-heading-elm10 {
-              font-size: 36px;
             }
             .home-thq-caption-elm10 {
               font-size: 16px;

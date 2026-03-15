@@ -103,13 +103,7 @@ const Donate = (props) => {
             <div className="donate-thq-header-container-elm">
               <div className="donate-thq-header-elm">
                 <h1 className="donate-thq-heading-elm">Donate</h1>
-              </div>
-              <p className="donate-thq-caption-elm">
-                Our mission is to educate and empower teenagers, by teenagers,
-                to recognize, speak up and change anti-Semitic curriculum in
-                their schools, community and online.  
-              </p>
-            </div>
+              </div>            </div>
             <a
               href="https://www.gofundme.com/f/faisit?attribution_id=sl:21ddbc80-3b4b-4c54-beb1-34b8a49d32f2&amp;lang=en_US&amp;utm_campaign=man_sharesheet_dash&amp;utm_medium=customer&amp;utm_source=copy_link"
               target="_blank"
@@ -382,14 +376,14 @@ const Donate = (props) => {
           }
           .donate-thq-heading-elm {
             color: rgb(255, 255, 255);
-            font-size: 100px;
+            font-size: var(--fais-font-display);
             max-width: 790px;
             font-style: normal;
             font-weight: 500;
           }
           .donate-thq-caption-elm {
             color: rgb(255, 255, 255);
-            font-size: 24px;
+            font-size: var(--fais-font-body-lg);
             max-width: 600px;
             line-height: 36px;
           }
@@ -414,7 +408,7 @@ const Donate = (props) => {
             color: rgb(255, 255, 255);
             width: 100%;
             display: none;
-            font-size: 50px;
+            font-size: var(--fais-font-h2);
             max-width: var(--dl-layout-size-maxwidth);
           }
           .donate-text23 {
@@ -515,16 +509,10 @@ const Donate = (props) => {
               padding-right: var(--dl-layout-space-fiveunits);
               padding-bottom: var(--dl-layout-space-fiveunits);
             }
-            .donate-text22 {
-              font-size: 50px;
-            }
           }
           @media (max-width: 1200px) {
             .donate-thq-body-elm {
               padding: var(--dl-layout-space-fourunits);
-            }
-            .donate-text22 {
-              font-size: 40px;
             }
           }
           @media (max-width: 991px) {
@@ -539,22 +527,13 @@ const Donate = (props) => {
             }
           }
           @media (max-width: 767px) {
-            .donate-thq-heading-elm {
-              font-size: 60px;
-            }
             .donate-thq-body-elm {
               padding: var(--dl-layout-space-threeunits);
-            }
-            .donate-text22 {
-              font-size: 25px;
             }
           }
           @media (max-width: 479px) {
             .donate-thq-hero-content-elm {
               gap: var(--dl-layout-space-threeunits);
-            }
-            .donate-thq-heading-elm {
-              font-size: 36px;
             }
             .donate-thq-caption-elm {
               font-size: 16px;

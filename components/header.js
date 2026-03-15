@@ -23,7 +23,7 @@ const Header = (props) => {
               <div className="header-container1">
                 <img
                   alt={props.pastedImageAlt}
-                  src="/external/pastedimage-kyb-300w.png"
+                  src="/newlogo.png"
                   className="header-thq-pasted-image-elm1"
                 />
                 <span className="header-text10">
@@ -72,7 +72,7 @@ const Header = (props) => {
                     <div className="header-container2">
                       <img
                         alt={props.pastedImageAlt1}
-                        src="/external/pastedimage-kyb-300w.png"
+                        src="/newlogo.png"
                         className="header-thq-pasted-image-elm2"
                       />
                       <span className="header-text11">
@@ -99,24 +99,36 @@ const Header = (props) => {
                 data-role="Nav"
                 className="header-thq-nav-elm2"
               >
+                <Link href="/about-fais">
+                  <a className="header-link-about-fais">
+                    About
+                  </a>
+                </Link>
                 <Link href="/about">
                   <a className="header-link14">
                     {props.text ?? (
                       <Fragment>
-                        <span className="header-text15">About</span>
+                        <span className="header-text15">Our Story</span>
                       </Fragment>
                     )}
                   </a>
                 </Link>
-                <Link href="/news">
-                  <a className="header-link15">
-                    {props.text8 ?? (
-                      <Fragment>
-                        <span className="header-text23">News</span>
-                      </Fragment>
-                    )}
+                <Link href="/fais-method">
+                  <a className="header-link-fais-method">
+                    F.A.I.S
                   </a>
                 </Link>
+                <Link href="/team">
+                  <a className="header-link-team">
+                    Team
+                  </a>
+                </Link>
+                <Link href="/media">
+                  <a className="header-link-media">
+                    Media
+                  </a>
+                </Link>
+                
                 <Link href="/resources">
                   <a className="header-link16">
                     {props.text1 ?? (
@@ -135,15 +147,7 @@ const Header = (props) => {
                     )}
                   </a>
                 </Link>
-                <Link href="/need-help">
-                  <a className="header-link18">
-                    {props.text3 ?? (
-                      <Fragment>
-                        <span className="header-text18">Need Help</span>
-                      </Fragment>
-                    )}
-                  </a>
-                </Link>
+                
                 <Link href="/donate">
                   <a className="header-link19">
                     {props.text4 ?? (
@@ -350,8 +354,8 @@ const Header = (props) => {
           }
           .header-icon1 {
             fill: var(--dl-color-gray-white);
-            width: var(--dl-layout-size-xsmall);
-            height: var(--dl-layout-size-xsmall);
+            width: 32px;
+            height: 32px;
           }
           .header-thq-nav-elm2 {
             flex: 0 0 auto;
@@ -420,8 +424,32 @@ const Header = (props) => {
             width: var(--dl-layout-size-xsmall);
             height: var(--dl-layout-size-xsmall);
           }
+          .header-link-about-fais {
+            display: inline-block;
+            color: var(--dl-color-gray-white);
+            text-decoration: none;
+            margin-bottom: var(--dl-layout-space-unit);
+          }
           .header-text14 {
             display: inline-block;
+          }
+          .header-link-fais-method {
+            display: inline-block;
+            color: var(--dl-color-gray-white);
+            text-decoration: none;
+            margin-bottom: var(--dl-layout-space-unit);
+          }
+          .header-link-team {
+            display: inline-block;
+            color: var(--dl-color-gray-white);
+            text-decoration: none;
+            margin-bottom: var(--dl-layout-space-unit);
+          }
+          .header-link-media {
+            display: inline-block;
+            color: var(--dl-color-gray-white);
+            text-decoration: none;
+            margin-bottom: var(--dl-layout-space-unit);
           }
           .header-text15 {
             display: inline-block;
@@ -550,7 +578,7 @@ Header.defaultProps = {
   pastedImageAlt: 'pastedImage',
   imageAlt: 'image',
   text8: undefined,
-  imageSrc: '/logo.svg',
+  imageSrc: '/newlogo.png',
   iconAlt: 'image',
   text61: undefined,
   brandingAlt: 'image',

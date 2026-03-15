@@ -12,12 +12,12 @@ const About = (props) => {
     <>
       <div className="about-container1">
         <Head>
-          <title>About - FAIS IT</title>
+          <title>Our Story - FAIS IT</title>
           <meta
             name="description"
             content="Our mission is to educate and empower teenagers, by teenagers, to recognize, speak up and change anti-Semitic curriculum in their schools, community and online.  \n"
           />
-          <meta property="og:title" content="About - FAIS IT" />
+          <meta property="og:title" content="Our Story - FAIS IT" />
           <meta
             property="og:description"
             content="Our mission is to educate and empower teenagers, by teenagers, to recognize, speak up and change anti-Semitic curriculum in their schools, community and online.  \n"
@@ -35,7 +35,7 @@ const About = (props) => {
           <Header
             text={
               <Fragment>
-                <span className="about-text10">About</span>
+                <span className="about-text10">Our Story</span>
               </Fragment>
             }
             login={
@@ -103,15 +103,10 @@ const About = (props) => {
             <div className="about-thq-header-container-elm">
               <div className="about-thq-header-elm">
                 <h1 className="about-thq-heading-elm">
-                  <span>About</span>
+                  <span>Our Story</span>
                   <br></br>
                 </h1>
               </div>
-              <p className="about-thq-caption-elm">
-                Our mission is to educate and empower teenagers, by teenagers,
-                to recognize, speak up and change anti-Semitic curriculum in
-                their schools, community and online.  
-              </p>
             </div>
             <Link href="/contact">
               <a className="about-link button">
@@ -129,46 +124,30 @@ const About = (props) => {
             />
           </div>
           <div className="about-container3">
-            <span className="about-text24">
-              <span className="about-text25">Our Story:</span>
-              <span className="about-text26">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-              <span className="about-text27">
-                FAIS-IT was founded in 2023 by David, a high school freshman who
-                encountered antisemitic curriculum in his school. After
-                confronting the issue and advocating for change, David realized
-                the need for a platform that empowers other students to do the
-                same. With the support of parents, educators, and community
-                organizations, FAIS-IT was born.
-              </span>
-            </span>
-            <span className="about-text28">
-              <span className="about-text29">David Magen</span>
-              <span>
-                {' '}
-                is 14 years old and actively advocates against antisemitism. He
-                was able to change the inaccurate and antisemitic curriculum in
-                his school, spoke in front of the Massachusetts Board of
-                Elementary and Secondary Education, and appeared on TV stations,
-                newspapers and speaking engagements. He is an excellent student
-                at Marblehead High School, an outstanding soccer player and the
-                only freshman on the varsity soccer team, a highly ranked chess
-                player, a musician, a fisherman, and danced in the Boston Ballet
-                Nutcracker. David’s mission is to empower other teenagers to
-                recognize, speak up, and change antisemitic curriculum in their
-                schools.
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-            </span>
+            <p className="about-text27">
+              FAIS began in the winter of 2023 when David Magen, then a freshman at Marblehead High School, encountered antisemitic material in his school&#39;s curriculum. In a class handout discussing ancient biblical history, the words Israel and Judea were removed and replaced with the term Palestine. Recognizing that this was historically inaccurate and erased Jewish history, David brought the handout home and began researching the issue with his parents.
+            </p>
+            <p className="about-text27">
+              Soon after, when assigned a homework question asking about the relationship between Palestine and the Jewish religion, David wrote a one-page response challenging the premise of the assignment. In his statement he explained that the name &ldquo;Palestine&rdquo; did not exist during the biblical time period, and he concluded his response with the words written in all capital letters: &ldquo;THIS IS ANTISEMITISM.&rdquo;
+            </p>
+            <p className="about-text27">
+              David was later called to meet with the head of the department. During that meeting he presented historical evidence and explained why the material was inaccurate and harmful. He formally requested that the handout never be distributed again and that changes be made to the curriculum. Both requests were accepted.
+            </p>
+            <p className="about-text27 about-text-emphasis">
+              That moment sparked something bigger.
+            </p>
+            <p className="about-text27">
+              Following this experience, David began speaking publicly about antisemitism in education. He has since been invited to speak at synagogues, school board hearings, state legislative hearings, nonprofit webinars and seminars, the Israeli-American Council National Summit (2024), and the Hadassah Advocacy Panel.
+            </p>
+            <p className="about-text27">
+              From this effort, F.A.I.S. &mdash; Fighting Antisemitism in Schools &mdash; was born.
+            </p>
+            <p className="about-text27">
+              FAIS operates on a simple principle: the best way to reach a teenager is through another teenager. And the most powerful way to change someone&#39;s mind is through emotion supported by facts.
+            </p>
+            <p className="about-text27">
+              Today, FAIS collaborates with Jewish and Israeli organizations including the Israeli-American Council, DiploAct, the Lappin Foundation, and Israeli hostage and survivor advocacy organizations. Together, we are building new ways to educate students about Israel, Judaism, and how to recognize and challenge antisemitism in school curricula and in everyday life.
+            </p>
           </div>
         </div>
         <Footer
@@ -186,7 +165,7 @@ const About = (props) => {
           }
           text2={
             <Fragment>
-              <span className="about-text32">About</span>
+              <span className="about-text32">Our Story</span>
             </Fragment>
           }
           text3={
@@ -379,14 +358,14 @@ const About = (props) => {
           }
           .about-thq-heading-elm {
             color: rgb(255, 255, 255);
-            font-size: 100px;
+            font-size: var(--fais-font-display);
             max-width: 790px;
             font-style: normal;
             font-weight: 500;
           }
           .about-thq-caption-elm {
             color: rgb(255, 255, 255);
-            font-size: 24px;
+            font-size: var(--fais-font-body-lg);
             max-width: 600px;
             line-height: 36px;
           }
@@ -418,6 +397,11 @@ const About = (props) => {
             display: flex;
             align-items: flex-start;
             flex-direction: column;
+            max-width: var(--dl-layout-size-maxwidth);
+          }
+          .about-container3 p {
+            color: rgb(255, 255, 255);
+            font-size: var(--fais-font-body-lg);
           }
           .about-text24 {
             color: rgb(255, 255, 255);
@@ -432,6 +416,11 @@ const About = (props) => {
           .about-text27 {
             font-style: normal;
             font-weight: 300;
+            margin-bottom: 1.2em;
+          }
+          .about-text-emphasis {
+            font-weight: 600;
+            font-style: italic;
           }
           .about-text28 {
             color: rgb(255, 255, 255);
@@ -535,7 +524,7 @@ const About = (props) => {
           @media (max-width: 1200px) {
             .about-thq-caption-elm {
               color: rgb(255, 255, 255);
-              font-size: 24px;
+              font-size: var(--fais-font-body-lg);
               max-width: 600px;
               line-height: 36px;
             }
@@ -574,8 +563,8 @@ const About = (props) => {
             }
           }
           @media (max-width: 767px) {
-            .about-thq-heading-elm {
-              font-size: 60px;
+            .about-container3 p {
+              font-size: 16px;
             }
             .about-thq-body-elm {
               padding: var(--dl-layout-space-threeunits);
@@ -593,9 +582,6 @@ const About = (props) => {
           @media (max-width: 479px) {
             .about-thq-hero-content-elm {
               gap: var(--dl-layout-space-threeunits);
-            }
-            .about-thq-heading-elm {
-              font-size: 36px;
             }
             .about-thq-caption-elm {
               font-size: 16px;

@@ -107,13 +107,7 @@ const GetInvolved = (props) => {
                   <span>Get Involved</span>
                   <br></br>
                 </h1>
-              </div>
-              <p className="get-involved-thq-caption-elm">
-                Our mission is to educate and empower teenagers, by teenagers,
-                to recognize, speak up and change anti-Semitic curriculum in
-                their schools, community and online.  
-              </p>
-            </div>
+              </div>            </div>
             <Link href="/contact">
               <a className="get-involved-link button">
                 <span>Get Involved</span>
@@ -373,7 +367,7 @@ const GetInvolved = (props) => {
           }
           .get-involved-thq-heading-elm {
             color: rgb(255, 255, 255);
-            font-size: 100px;
+            font-size: var(--fais-font-display);
             max-width: 790px;
             font-style: normal;
             font-weight: 500;
@@ -405,22 +399,27 @@ const GetInvolved = (props) => {
           .get-involved-text24 {
             color: rgb(255, 255, 255);
             width: 100%;
-            font-size: 50px;
+            font-size: var(--fais-font-body);
+            line-height: var(--fais-lh-body);
             max-width: var(--dl-layout-size-maxwidth);
           }
           .get-involved-text25 {
-            font-weight: 700;
+            font-size: var(--fais-font-h3);
+            font-weight: var(--fais-weight-semibold);
           }
           .get-involved-text27 {
+            font-size: var(--fais-font-body);
             font-style: normal;
-            font-weight: 300;
+            font-weight: var(--fais-weight-light);
           }
           .get-involved-text30 {
-            font-weight: 700;
+            font-size: var(--fais-font-h3);
+            font-weight: var(--fais-weight-semibold);
           }
           .get-involved-text32 {
+            font-size: var(--fais-font-body);
             font-style: normal;
-            font-weight: 300;
+            font-weight: var(--fais-weight-light);
           }
           .get-involved-text33 {
             display: inline-block;
@@ -495,16 +494,10 @@ const GetInvolved = (props) => {
               padding-right: var(--dl-layout-space-fiveunits);
               padding-bottom: var(--dl-layout-space-fiveunits);
             }
-            .get-involved-text24 {
-              font-size: 50px;
-            }
           }
           @media (max-width: 1200px) {
             .get-involved-thq-body-elm {
               padding: var(--dl-layout-space-fourunits);
-            }
-            .get-involved-text24 {
-              font-size: 40px;
             }
           }
           @media (max-width: 991px) {
@@ -519,22 +512,13 @@ const GetInvolved = (props) => {
             }
           }
           @media (max-width: 767px) {
-            .get-involved-thq-heading-elm {
-              font-size: 60px;
-            }
             .get-involved-thq-body-elm {
               padding: var(--dl-layout-space-threeunits);
-            }
-            .get-involved-text24 {
-              font-size: 25px;
             }
           }
           @media (max-width: 479px) {
             .get-involved-thq-hero-content-elm {
               gap: var(--dl-layout-space-threeunits);
-            }
-            .get-involved-thq-heading-elm {
-              font-size: 36px;
             }
             .get-involved-thq-caption-elm {
               font-size: 16px;

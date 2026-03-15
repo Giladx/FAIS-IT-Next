@@ -1,3 +1,111 @@
+/* ============================================
+   FAIS GLOBAL TYPOGRAPHY SYSTEM
+   ============================================ */
+
+:root {
+  /* Type scale */
+  --fais-font-display: 80px;
+  --fais-font-h1:      64px;
+  --fais-font-h2:      48px;
+  --fais-font-h3:      32px;
+  --fais-font-h4:      24px;
+  --fais-font-body-lg: 20px;
+  --fais-font-body:    18px;
+  --fais-font-body-sm: 16px;
+  --fais-font-caption: 14px;
+
+  /* Line heights */
+  --fais-lh-heading: 1.1;
+  --fais-lh-body:    1.6;
+
+  /* Weights */
+  --fais-weight-bold:    700;
+  --fais-weight-semibold:600;
+  --fais-weight-medium:  500;
+  --fais-weight-regular: 400;
+  --fais-weight-light:   300;
+
+  /* Letter spacing */
+  --fais-ls-tight:    -0.02em;
+  --fais-ls-normal:    0;
+  --fais-ls-wide:      0.05em;
+  --fais-ls-widest:    0.1em;
+}
+
+/* Base element typography */
+h1 {
+  font-size: var(--fais-font-h1);
+  font-weight: var(--fais-weight-bold);
+  line-height: var(--fais-lh-heading);
+  letter-spacing: var(--fais-ls-tight);
+  font-family: Inter, sans-serif;
+}
+
+h2 {
+  font-size: var(--fais-font-h2);
+  font-weight: var(--fais-weight-semibold);
+  line-height: var(--fais-lh-heading);
+  letter-spacing: var(--fais-ls-tight);
+  font-family: Inter, sans-serif;
+}
+
+h3 {
+  font-size: var(--fais-font-h3);
+  font-weight: var(--fais-weight-semibold);
+  line-height: 1.25;
+  letter-spacing: var(--fais-ls-normal);
+  font-family: Inter, sans-serif;
+}
+
+h4 {
+  font-size: var(--fais-font-h4);
+  font-weight: var(--fais-weight-medium);
+  line-height: 1.3;
+  letter-spacing: var(--fais-ls-normal);
+  font-family: Inter, sans-serif;
+}
+
+p {
+  font-size: var(--fais-font-body);
+  font-weight: var(--fais-weight-light);
+  line-height: var(--fais-lh-body);
+  font-family: Inter, sans-serif;
+}
+
+/* Responsive type scale */
+@media (max-width: 1024px) {
+  :root {
+    --fais-font-display: 64px;
+    --fais-font-h1:      52px;
+    --fais-font-h2:      40px;
+    --fais-font-h3:      28px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --fais-font-display: 44px;
+    --fais-font-h1:      36px;
+    --fais-font-h2:      28px;
+    --fais-font-h3:      22px;
+    --fais-font-h4:      20px;
+    --fais-font-body-lg: 18px;
+    --fais-font-body:    16px;
+  }
+}
+
+@media (max-width: 479px) {
+  :root {
+    --fais-font-display: 36px;
+    --fais-font-h1:      30px;
+    --fais-font-h2:      24px;
+    --fais-font-h3:      20px;
+    --fais-font-body:    15px;
+  }
+}
+
+/* ============================================ */
+
 :root {
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;

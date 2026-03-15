@@ -17,6 +17,7 @@ const News = (props) => {
             name="description"
             content="Our mission is to educate and empower teenagers, by teenagers, to recognize, speak up and change anti-Semitic curriculum in their schools, community and online.  \n"
           />
+          <meta name="robots" content="noindex, nofollow" />
           <meta property="og:title" content="News - FAIS IT" />
           <meta
             property="og:description"
@@ -106,13 +107,7 @@ const News = (props) => {
                   <span>In The News</span>
                   <br></br>
                 </h1>
-              </div>
-              <p className="news-thq-caption-elm">
-                Our mission is to educate and empower teenagers, by teenagers,
-                to recognize, speak up and change anti-Semitic curriculum in
-                their schools, community and online.  
-              </p>
-            </div>
+              </div>            </div>
             <Link href="/contact">
               <a className="news-link1 button">
                 <span>Get Involved</span>
@@ -435,14 +430,14 @@ const News = (props) => {
           }
           .news-thq-heading-elm {
             color: rgb(255, 255, 255);
-            font-size: 100px;
+            font-size: var(--fais-font-display);
             max-width: 790px;
             font-style: normal;
             font-weight: 500;
           }
           .news-thq-caption-elm {
             color: rgb(255, 255, 255);
-            font-size: 24px;
+            font-size: var(--fais-font-body-lg);
             max-width: 600px;
             line-height: 36px;
           }
@@ -664,9 +659,6 @@ const News = (props) => {
             }
           }
           @media (max-width: 767px) {
-            .news-thq-heading-elm {
-              font-size: 60px;
-            }
             .news-thq-body-elm {
               padding: var(--dl-layout-space-threeunits);
             }
@@ -689,9 +681,6 @@ const News = (props) => {
           @media (max-width: 479px) {
             .news-thq-hero-content-elm {
               gap: var(--dl-layout-space-threeunits);
-            }
-            .news-thq-heading-elm {
-              font-size: 36px;
             }
             .news-thq-caption-elm {
               font-size: 16px;

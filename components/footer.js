@@ -14,7 +14,7 @@ const Footer = (props) => {
             <div className="footer-thq-branding-elm">
               <img
                 alt={props.pastedImageAlt}
-                src="/external/pastedimage-kyb-200w.png"
+                src="/newlogo.png"
                 className="footer-thq-pasted-image-elm"
               />
               <span className="footer-text10">
@@ -229,40 +229,16 @@ const Footer = (props) => {
                 </Fragment>
               )}
             </span>
-            <button data-role="scroll-top" className="footer-button button">
+            <button
+              className="footer-button button"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
               <img
                 alt={props.imageAlt1}
                 src={props.imageSrc1}
                 className="footer-image"
               />
             </button>
-          </div>
-        </div>
-        <div>
-          <div className="footer-container2">
-            <Script
-              html={`<script>
-(function() {
-  document.addEventListener("DOMContentLoaded", function() {
-    // get the element with the "scroll-top" data-role
-    const scrollTopBtn = document.querySelector('[data-role="scroll-top"]');
-
-    // Check if the button exists before adding the event listener
-    if (scrollTopBtn) {
-      // when the element is clicked
-      scrollTopBtn.addEventListener("click", function() {
-        // smoothly scroll to the top of the page
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-      });
-    }
-  });
-})();
-</script>
-`}
-            ></Script>
           </div>
         </div>
       </div>
