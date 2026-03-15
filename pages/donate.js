@@ -104,14 +104,30 @@ const Donate = (props) => {
               <div className="donate-thq-header-elm">
                 <h1 className="donate-thq-heading-elm">Donate</h1>
               </div>            </div>
-            <a
-              href="https://www.gofundme.com/f/faisit?attribution_id=sl:21ddbc80-3b4b-4c54-beb1-34b8a49d32f2&amp;lang=en_US&amp;utm_campaign=man_sharesheet_dash&amp;utm_medium=customer&amp;utm_source=copy_link"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="donate-link1 button"
-            >
-              <span className="donate-text21">Donate Now</span>
-            </a>
+            <div className="donate-buttons-row">
+              <a
+                href="https://www.gofundme.com/f/faisit?attribution_id=sl:21ddbc80-3b4b-4c54-beb1-34b8a49d32f2&amp;lang=en_US&amp;utm_campaign=man_sharesheet_dash&amp;utm_medium=customer&amp;utm_source=copy_link"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="donate-btn donate-btn-gofundme"
+              >
+                <svg width="24" height="24" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25 8C20 8 12 13 12 21c0 5 3 9 7 11l6 10 6-10c4-2 7-6 7-11 0-8-8-13-13-13z" fill="#fff"/>
+                </svg>
+                <span>Donate via GoFundMe</span>
+              </a>
+              <a
+                href="https://buy.stripe.com/4gM5kCdFj8Nsc6MaRt9R601"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="donate-btn donate-btn-stripe"
+              >
+                <svg width="24" height="24" viewBox="0 0 60 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.3 7.2c0-1.2 1-1.7 2.6-1.7 2.3 0 5.2.7 7.5 2V2.3C35 1.2 32.6.7 30.1.7c-5.5 0-9.2 2.9-9.2 7.7 0 7.5 10.3 6.3 10.3 9.5 0 1.4-1.2 1.9-2.9 1.9-2.5 0-5.7-.9-8.2-2.4v5.3c2.8 1.2 5.6 1.7 8.2 1.7 5.7 0 9.6-2.8 9.6-7.7C37.9 8.8 27.3 10.2 27.3 7.2z" fill="#fff"/>
+                </svg>
+                <span>Donate via Stripe</span>
+              </a>
+            </div>
           </div>
         </section>
         <div className="donate-thq-body-elm">
@@ -387,13 +403,37 @@ const Donate = (props) => {
             max-width: 600px;
             line-height: 36px;
           }
-          .donate-link1 {
-            width: 100%;
-            padding-top: var(--dl-layout-space-twounits);
-            text-decoration: none;
+          .donate-buttons-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
           }
-          .donate-text21 {
-            font-size: 2em;
+          .donate-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 28px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity 0.2s;
+          }
+          .donate-btn:hover {
+            opacity: 0.85;
+          }
+          .donate-btn-gofundme {
+            background-color: #02a95c;
+            color: #fff;
+          }
+          .donate-btn-stripe {
+            background-color: #635bff;
+            color: #fff;
+          }
+          @media (max-width: 479px) {
+            .donate-buttons-row {
+              flex-direction: column;
+            }
           }
           .donate-thq-body-elm {
             flex: 0 0 auto;

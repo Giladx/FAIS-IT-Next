@@ -86,12 +86,19 @@ const Team = (props) => {
             <h1 className="team-page-title">Our Team</h1>
 
             <div className="team-member">
-              <div className="team-member-photo-wrap team-member-photo-placeholder">
-                <span className="team-member-initials">YM</span>
+              <div className="team-member-photo-wrap">
+                <img
+                  src="/yael.jpeg"
+                  alt="Yael Magen"
+                  className="team-member-photo"
+                />
               </div>
               <div className="team-member-info">
                 <h2 className="team-member-name">Yael Magen, Esq.</h2>
                 <p className="team-member-title">Founder &amp; President</p>
+                <p className="team-member-bio">
+                  Yael Magen is a Massachusetts attorney focusing on municipal law, estate planning, and business law. Born in Israel to American parents, she has been a lifelong advocate for the State of Israel and against antisemitism. She works with local committees, state commissions, nonprofit organizations, and community initiatives, using her legal background and knowledge of international law to educate about Israel and the Jewish people.
+                </p>
               </div>
             </div>
 
