@@ -10,6 +10,7 @@ import Check from '../components/check'
 import Line from '../components/line'
 import IconContainer from '../components/icon-container'
 import Footer from '../components/footer'
+import PageLinks from '../components/page-links'
 
 const Home = (props) => {
   return (
@@ -1162,24 +1163,7 @@ const Home = (props) => {
           <p className="home-only-way-text">The only way not.</p>
         </section>
 
-        <section className="home-all-pages">
-          <div className="home-all-pages-inner">
-            <h3 className="home-all-pages-title">Explore FAIS IT</h3>
-            <div className="home-all-pages-grid">
-              <Link href="/about"><a className="home-all-pages-link">About</a></Link>
-              <Link href="/about-fais"><a className="home-all-pages-link">About FAIS</a></Link>
-              <Link href="/team"><a className="home-all-pages-link">Our Team</a></Link>
-              <Link href="/fais-method"><a className="home-all-pages-link">FAIS Method</a></Link>
-              <Link href="/parents"><a className="home-all-pages-link">Parents</a></Link>
-              <Link href="/resources"><a className="home-all-pages-link">Resources</a></Link>
-              <Link href="/events"><a className="home-all-pages-link">Events</a></Link>
-              <Link href="/news"><a className="home-all-pages-link">News</a></Link>
-              <Link href="/donate"><a className="home-all-pages-link">Donate</a></Link>
-              <Link href="/need-help"><a className="home-all-pages-link">Need Help</a></Link>
-              <Link href="/contact"><a className="home-all-pages-link">Contact</a></Link>
-            </div>
-          </div>
-        </section>
+        <PageLinks />
 
         <Footer
           text={

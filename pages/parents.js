@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
+import PageLinks from '../components/page-links'
 
 const Parents = (props) => {
   return (
@@ -65,6 +66,7 @@ const Parents = (props) => {
           </div>
         </section>
 
+        <PageLinks />
         <Footer></Footer>
       </div>
 

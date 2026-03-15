@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
+import PageLinks from '../components/page-links'
 
 const Contact = (props) => {
   return (
@@ -143,6 +144,7 @@ const Contact = (props) => {
             </span>
           </span>
         </div>
+        <PageLinks />
         <Footer
           text={
             <Fragment>
@@ -333,7 +335,7 @@ const Contact = (props) => {
             display: flex;
             z-index: 100;
             max-width: var(--dl-layout-size-maxwidth);
-            align-items: flex-start;
+            align-items: center;
             flex-direction: row;
             justify-content: center;
           }
@@ -342,6 +344,7 @@ const Contact = (props) => {
             align-items: flex-start;
             flex-direction: column;
             justify-content: center;
+            gap: var(--dl-layout-space-twounits);
           }
           .contact-thq-header-container-elm {
             gap: var(--dl-layout-space-oneandhalfunits);

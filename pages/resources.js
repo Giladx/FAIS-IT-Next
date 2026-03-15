@@ -4,6 +4,7 @@ import Head from 'next/head'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
+import PageLinks from '../components/page-links'
 
 const groups = [
   {
@@ -185,6 +186,7 @@ const Resources = (props) => {
           </div>
         </section>
 
+        <PageLinks />
         <Footer
           text={<Fragment><span className="resources-text185">© 2025 FAIS IT</span></Fragment>}
           text2={<Fragment><span className="resources-text186">About</span></Fragment>}

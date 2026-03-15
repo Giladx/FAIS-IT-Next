@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
+import PageLinks from '../components/page-links'
 
 const NeedHelp = (props) => {
   return (
@@ -209,6 +210,7 @@ const NeedHelp = (props) => {
             </span>
           </span>
         </div>
+        <PageLinks />
         <Footer
           text={
             <Fragment>

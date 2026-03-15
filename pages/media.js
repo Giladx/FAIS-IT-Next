@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
+import PageLinks from '../components/page-links'
 
 const articles = [
   {
@@ -129,6 +130,7 @@ const Media = (props) => {
           </div>
         </section>
 
+        <PageLinks />
         <Footer></Footer>
       </div>
 

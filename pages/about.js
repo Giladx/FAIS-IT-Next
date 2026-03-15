@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
+import PageLinks from '../components/page-links'
 
 const About = (props) => {
   return (
@@ -150,6 +151,7 @@ const About = (props) => {
             </p>
           </div>
         </div>
+        <PageLinks />
         <Footer
           text={
             <Fragment>
