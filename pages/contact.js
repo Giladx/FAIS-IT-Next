@@ -124,7 +124,25 @@ const Contact = (props) => {
             </div>
           </div>
         </section>
-        <div className="contact-thq-body-elm"></div>
+        <div className="contact-thq-body-elm">
+          <span className="contact-body-text">
+            <span className="contact-body-heading">Volunteer Opportunities:</span>
+            {' '}
+            <span className="contact-body-para">
+              Join us in the fight against antisemitism! We are looking for passionate teens to help with advocacy, education, and event planning. Whether you want to lead a workshop, organize an event, or spread awareness on social media, there&apos;s a place for you at FAIS IT.
+            </span>
+            <br /><br />
+            <span className="contact-body-heading">Advocacy Toolkit:</span>
+            {' '}
+            <span className="contact-body-para">
+              Our Advocacy Toolkit provides step-by-step guidance on how to effectively address antisemitism in your school. Learn how to gather evidence, approach school officials, and propose changes to the curriculum.
+            </span>
+            <br /><br />
+            <span className="contact-body-para">
+              If you encountered antisemitism or know someone who has, please reach out to us for help.
+            </span>
+          </span>
+        </div>
         <Footer
           text={
             <Fragment>
@@ -363,11 +381,26 @@ const Contact = (props) => {
           .contact-thq-body-elm {
             flex: 0 0 auto;
             width: 100%;
-            border: 2px dashed rgba(120, 120, 120, 0.4);
-            height: 200px;
             display: flex;
             align-items: flex-start;
             flex-direction: column;
+            padding: 60px 80px;
+            max-width: var(--dl-layout-size-maxwidth);
+            align-self: center;
+          }
+          .contact-body-text {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 900px;
+          }
+          .contact-body-heading {
+            font-size: 20px;
+            font-weight: 700;
+          }
+          .contact-body-para {
+            font-style: normal;
+            font-weight: 300;
           }
           .contact-text24 {
             display: inline-block;

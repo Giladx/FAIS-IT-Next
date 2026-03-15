@@ -105,6 +105,10 @@ const Home = (props) => {
           />
         </section>
         <section className="home-hero-text-elm">
+          <h2 className="home-slogan">
+            Empowering Teens by Teens to{' '}
+            <em className="home-slogan-highlight">FAIS it</em>
+          </h2>
           <Link href="/contact">
             <a className="home-link1 button">
               <span>
@@ -121,11 +125,7 @@ const Home = (props) => {
                 Our mission is to educate and empower teenagers—by teenagers—to recognize, speak up against, and help change antisemitic and anti-Israel curriculum in their schools, communities, and online.
               </p>
             </div>
-            <div className="home-about-info-block">
-              <p className="home-about-info-text">
-                Students are often the first line of defense against antisemitic or anti-Israel content in education. Parents frequently do not see the materials their children are taught, while students encounter them directly in classrooms and assignments. Yet many students lack the tools to recognize bias, understand why it is harmful, and take effective action.
-              </p>
-            </div>
+
             <div className="home-about-info-block">
               <p className="home-about-info-text">
                 FAIS exists to give students the knowledge, confidence, and strategy they need to stand up for historical truth and ensure that antisemitism has no place in education.
@@ -216,35 +216,6 @@ const Home = (props) => {
               material, plan to confront it and empower them to speak up.
             </p>
           </div>
-        </section>
-        <section className="home-thq-get-started-elm">
-          <div className="home-thq-header-container-elm2">
-            <div className="home-thq-header-elm16">
-              <h2 className="home-thq-heading-elm12">
-                Students can be the first defense in anti-Semitic/anti-Israel
-                curriculum.
-              </h2>
-              <p className="home-thq-caption-elm17">
-                As parents to teenagers do not know what their children are
-                being taught. It is the students who are confronted with the
-                curriculum but often they do not have the tools to recognize,
-                understand and take action against the anti-Semitic/anti-Israel
-                curriculum. 
-              </p>
-            </div>
-            <div className="home-thq-button-elm1">
-              <Link href="/contact">
-                <a className="home-link2 button">
-                  <span>Get Involved</span>
-                </a>
-              </Link>
-            </div>
-          </div>
-          <img
-            alt="image"
-            src="https://images.unsplash.com/photo-1538581746996-f1d586de2905?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0MDU5Mjk0OHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=800"
-            className="home-image1"
-          />
         </section>
         <section className="home-thq-slides-elm">
           <div className="home-thq-slider-elm2 slider blaze-slider">
@@ -1186,6 +1157,30 @@ const Home = (props) => {
             </div>
           </div>
         </section>
+
+        <section className="home-only-way">
+          <p className="home-only-way-text">The only way not.</p>
+        </section>
+
+        <section className="home-all-pages">
+          <div className="home-all-pages-inner">
+            <h3 className="home-all-pages-title">Explore FAIS IT</h3>
+            <div className="home-all-pages-grid">
+              <Link href="/about"><a className="home-all-pages-link">About</a></Link>
+              <Link href="/about-fais"><a className="home-all-pages-link">About FAIS</a></Link>
+              <Link href="/team"><a className="home-all-pages-link">Our Team</a></Link>
+              <Link href="/fais-method"><a className="home-all-pages-link">FAIS Method</a></Link>
+              <Link href="/parents"><a className="home-all-pages-link">Parents</a></Link>
+              <Link href="/resources"><a className="home-all-pages-link">Resources</a></Link>
+              <Link href="/events"><a className="home-all-pages-link">Events</a></Link>
+              <Link href="/news"><a className="home-all-pages-link">News</a></Link>
+              <Link href="/donate"><a className="home-all-pages-link">Donate</a></Link>
+              <Link href="/need-help"><a className="home-all-pages-link">Need Help</a></Link>
+              <Link href="/contact"><a className="home-all-pages-link">Contact</a></Link>
+            </div>
+          </div>
+        </section>
+
         <Footer
           text={
             <Fragment>
@@ -1463,6 +1458,70 @@ const Home = (props) => {
             align-items: center;
             flex-direction: column;
             text-align: center;
+          }
+          .home-slogan {
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: 600;
+            margin: 0;
+            font-style: normal;
+          }
+          .home-slogan-highlight {
+            font-style: italic;
+            font-weight: 800;
+          }
+          .home-only-way {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 80px 40px;
+            background-color: #111;
+          }
+          .home-only-way-text {
+            color: #ffffff;
+            font-size: 48px;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            letter-spacing: -0.02em;
+          }
+          .home-all-pages {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 60px 40px;
+            background-color: #0d0d0d;
+            border-top: 1px solid #222;
+          }
+          .home-all-pages-inner {
+            width: 100%;
+            max-width: var(--dl-layout-size-maxwidth);
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+          }
+          .home-all-pages-title {
+            color: #aaaaaa;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin: 0;
+          }
+          .home-all-pages-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 32px;
+          }
+          .home-all-pages-link {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: opacity 0.2s;
+          }
+          .home-all-pages-link:hover {
+            opacity: 0.6;
           }
           .home-heading-dark {
             color: rgb(255, 255, 255);

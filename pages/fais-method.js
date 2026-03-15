@@ -126,6 +126,18 @@ const FaisMethod = (props) => {
                 </p>
               </div>
             </div>
+
+            <div className="fais-method-closing">
+              <p className="fais-method-closing-text">
+                We accomplish this by speaking directly with students, parents, and community members through school clubs, community events, webinars, panels, and educational sessions. FAIS give students the knowledge and confidence to recognize antisemitism in curriculum and understand how they can take action.
+              </p>
+              <p className="fais-method-closing-text">
+                During our sessions, we share real examples of antisemitism in education, explain how it can appear in textbooks, assignments, and classroom discussions, and teach students how to respond constructively. We introduce the FAIS Method—Find, Assess, Initiate, Solution, a framework that helps students identify problematic material, research the facts, cooperate with their parents and Jewish organizations, and approach school leadership with informed and constructive solutions.
+              </p>
+              <p className="fais-method-closing-text">
+                Our goal is simple: to give students the tools, knowledge, and confidence to stand up for historical truth and ensure that antisemitism has no place in education.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -200,6 +212,19 @@ const FaisMethod = (props) => {
           color: #cccccc;
           font-size: 18px;
           line-height: 1.7;
+          margin: 0;
+        }
+        .fais-method-closing {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          border-top: 1px solid #222;
+          padding-top: 48px;
+        }
+        .fais-method-closing-text {
+          color: #cccccc;
+          font-size: 18px;
+          line-height: 1.8;
           margin: 0;
         }
         @media (max-width: 767px) {
