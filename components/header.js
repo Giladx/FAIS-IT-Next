@@ -99,11 +99,6 @@ const Header = (props) => {
                 data-role="Nav"
                 className="header-thq-nav-elm2"
               >
-                <Link href="/about-fais">
-                  <a className="header-link-about-fais">
-                    About
-                  </a>
-                </Link>
                 <Link href="/about">
                   <a className="header-link14">
                     {props.text ?? (
