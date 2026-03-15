@@ -1470,7 +1470,7 @@ const Home = (props) => {
           .home-about-info-elm {
             width: 100%;
             display: flex;
-            padding: var(--dl-layout-space-fiveunits);
+            padding: var(--dl-layout-space-fiveunits) 15px;
             background: #1a1a1a;
             justify-content: center;
           }
