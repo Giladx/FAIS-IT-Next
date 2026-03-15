@@ -405,8 +405,21 @@ const Header = (props) => {
             flex-direction: row;
           }
           .header-link21 {
-            margin-right: var(--dl-layout-space-twounits);
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
             text-decoration: none;
+            color: #fff;
+            background-color: #1a1a2e;
+            border: 1px solid #444;
+            margin-right: var(--dl-layout-space-twounits);
+            transition: opacity 0.2s;
+          }
+          .header-link21:hover {
+            opacity: 0.85;
           }
           .header-thq-register-elm {
             text-decoration: none;
