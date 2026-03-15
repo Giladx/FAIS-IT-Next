@@ -106,17 +106,6 @@ const Donate = (props) => {
               </div>            </div>
             <div className="donate-buttons-row">
               <a
-                href="https://www.gofundme.com/f/faisit?attribution_id=sl:21ddbc80-3b4b-4c54-beb1-34b8a49d32f2&amp;lang=en_US&amp;utm_campaign=man_sharesheet_dash&amp;utm_medium=customer&amp;utm_source=copy_link"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="donate-btn donate-btn-gofundme"
-              >
-                <svg width="24" height="24" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M25 8C20 8 12 13 12 21c0 5 3 9 7 11l6 10 6-10c4-2 7-6 7-11 0-8-8-13-13-13z" fill="#fff"/>
-                </svg>
-                <span>Donate via GoFundMe</span>
-              </a>
-              <a
                 href="https://buy.stripe.com/4gM5kCdFj8Nsc6MaRt9R601"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -176,7 +165,7 @@ const Donate = (props) => {
             <br></br>
           </span>
           <a
-            href="https://www.gofundme.com/f/faisit?attribution_id=sl:21ddbc80-3b4b-4c54-beb1-34b8a49d32f2&amp;lang=en_US&amp;utm_campaign=man_sharesheet_dash&amp;utm_medium=customer&amp;utm_source=copy_link"
+            href="https://buy.stripe.com/4gM5kCdFj8Nsc6MaRt9R601"
             target="_blank"
             rel="noreferrer noopener"
             className="donate-link2 button"

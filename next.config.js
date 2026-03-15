@@ -3,6 +3,15 @@ module.exports = {
     locales: ['en'],
     defaultLocale: "en",
   },
+  async redirects() {
+    return [
+      {
+        source: '/get-involved',
+        destination: '/contact',
+        permanent: true,
+      },
+    ]
+  },
   webpack: (config, { dev }) => {
     if (dev) {
       config.watchOptions = {

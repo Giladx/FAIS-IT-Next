@@ -1,8 +1,7 @@
 export async function getStaticProps({ locale }) {
   return {
-    redirect: {
-      destination: '/contact',
-      permanent: true,
+    props: {
+      messages: (await import(`../locales/${locale}.json`)).default,
     },
   }
 }
