@@ -174,20 +174,30 @@ const Header = (props) => {
                     </span>
                   </a>
                 </Link>
-                <a
-                  href="https://www.gofundme.com/f/faisit?attribution_id=sl:21ddbc80-3b4b-4c54-beb1-34b8a49d32f2&amp;lang=en_US&amp;utm_campaign=man_sharesheet_dash&amp;utm_medium=customer&amp;utm_source=copy_link"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="header-thq-register-elm button"
-                >
-                  <span className="header-text13">
-                    {props.register ?? (
-                      <Fragment>
-                        <span className="header-text20">Donate Now</span>
-                      </Fragment>
-                    )}
-                  </span>
-                </a>
+                <div className="header-donate-buttons">
+                  <a
+                    href="https://www.gofundme.com/f/faisit?attribution_id=sl:21ddbc80-3b4b-4c54-beb1-34b8a49d32f2&amp;lang=en_US&amp;utm_campaign=man_sharesheet_dash&amp;utm_medium=customer&amp;utm_source=copy_link"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="header-donate-btn header-donate-gofundme"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M25 8C20 8 12 13 12 21c0 5 3 9 7 11l6 10 6-10c4-2 7-6 7-11 0-8-8-13-13-13z" fill="#fff"/>
+                    </svg>
+                    <span>GoFundMe</span>
+                  </a>
+                  <a
+                    href="https://buy.stripe.com/4gM5kCdFj8Nsc6MaRt9R601"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="header-donate-btn header-donate-stripe"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 60 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M27.3 7.2c0-1.2 1-1.7 2.6-1.7 2.3 0 5.2.7 7.5 2V2.3C35 1.2 32.6.7 30.1.7c-5.5 0-9.2 2.9-9.2 7.7 0 7.5 10.3 6.3 10.3 9.5 0 1.4-1.2 1.9-2.9 1.9-2.5 0-5.7-.9-8.2-2.4v5.3c2.8 1.2 5.6 1.7 8.2 1.7 5.7 0 9.6-2.8 9.6-7.7C37.9 8.8 27.3 10.2 27.3 7.2z" fill="#fff"/>
+                    </svg>
+                    <span>Stripe</span>
+                  </a>
+                </div>
               </div>
             </div>
             <div className="header-thq-icon-group-elm">
@@ -400,6 +410,32 @@ const Header = (props) => {
           }
           .header-thq-register-elm {
             text-decoration: none;
+          }
+          .header-donate-buttons {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+          }
+          .header-donate-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fff;
+            transition: opacity 0.2s;
+          }
+          .header-donate-btn:hover {
+            opacity: 0.85;
+          }
+          .header-donate-gofundme {
+            background-color: #02a95c;
+          }
+          .header-donate-stripe {
+            background-color: #635bff;
           }
           .header-thq-icon-group-elm {
             fill: var(--dl-color-gray-white);
