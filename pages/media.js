@@ -9,7 +9,7 @@ const articles = [
     outlet: 'Jewish Journal',
     title: 'Marblehead High student peacefully resolves contested curriculum on Israel',
     url: 'https://jewishjournal.org/2024/05/30/marblehead-high-student-peacefully-resolves-contested-curriculum-on-israel/',
-    image: 'https://jewishjournal.org/wp-content/uploads/2024/05/p3_family.jpg',
+    image: '/media-jewish-journal-1.jpg',
     summary:
       'This article explains how David identified inaccurate material in a class assignment and worked with school leadership to change the curriculum. The department head ultimately agreed that the wording about "Palestine" during the biblical time period was historically inaccurate and removed the handout.',
   },
@@ -17,7 +17,7 @@ const articles = [
     outlet: 'Jewish Journal',
     title: 'A Marblehead teen continues to lead the fight against anti-Israel bias',
     url: 'https://jewishjournal.org/2025/04/03/a-marblehead-teen-continues-to-lead-the-fight-against-anti-israel-bias/',
-    image: 'https://jewishjournal.org/wp-content/uploads/2025/04/Magen.jpg',
+    image: '/media-jewish-journal-2.jpg',
     summary:
       'This article discusses how David identified anti-Israel bias in a homework assignment, researched the history, and successfully convinced the school department to change the curriculum after presenting evidence.',
   },
@@ -25,8 +25,7 @@ const articles = [
     outlet: 'CBS Boston (WBZ)',
     title: 'Helpline launched for Massachusetts students experiencing antisemitism',
     url: 'https://www.cbsnews.com/boston/news/helpline-massachusetts-students-antisemitism/',
-    image:
-      'https://assets1.cbsnewsstatic.com/hub/i/r/2024/10/01/b70eccac-749e-4478-84f4-b0a98a7d6cd4/thumbnail/1200x630/02a8e4f8ca47aa6f8564faa351cd37b2/israel.jpg',
+    image: '/media-cbs-boston.jpg',
     summary:
       'A helpline has been launched in K-12 schools in Massachusetts to provide legal assistance to parents whose children are experiencing antisemitism. In this CBS News story, David speaks about discovering antisemitic classroom material and writing a counter-statement that led to the curriculum being removed from the school.',
   },
@@ -34,7 +33,7 @@ const articles = [
     outlet: 'Marblehead Current',
     title: 'Locals express relief after Israeli hostages released',
     url: 'https://marbleheadcurrent.org/2025/10/13/locals-express-relief-after-israeli-hostages-released/',
-    image: 'https://i0.wp.com/marbleheadcurrent.org/wp-content/uploads/2025/10/song.jpg?fit=1200%2C900&ssl=1',
+    image: '/media-marblehead-current.jpg',
     summary:
       'The release of the Israeli hostages prompted relief in the Marblehead Jewish community and beyond. This article mentions David\'s activism and notes that he helped start the nonprofit Fighting Antisemitism in Schools (FAIS) and organized community events supporting Israeli hostages.',
   },
