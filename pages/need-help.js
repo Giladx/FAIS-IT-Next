@@ -26,7 +26,7 @@ const NeedHelp = (props) => {
           />
           <meta
             property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8044f0cb-2f2e-424b-b592-50f4b4990f60/e4cab4ba-abdc-4395-87c7-fb65f74fdd7c?org_if_sml=1&amp;force_format=original"
+            content="https://www.faisit.com/newlogo.png"
           />
           <link
             rel="canonical"
