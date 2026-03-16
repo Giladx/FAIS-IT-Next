@@ -131,8 +131,12 @@ const Team = (props) => {
             <div className="team-divider"></div>
 
             <div className="team-member">
-              <div className="team-member-photo-wrap team-member-photo-placeholder">
-                <span className="team-member-initials">JM</span>
+              <div className="team-member-photo-wrap">
+                <img
+                  src="/yosef.png"
+                  alt="Joseph Noah Meltzer"
+                  className="team-member-photo"
+                />
               </div>
               <div className="team-member-info">
                 <h2 className="team-member-name">Joseph Noah Meltzer</h2>
